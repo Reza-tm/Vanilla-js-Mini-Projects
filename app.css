@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* set all */
+
+::-webkit-scrollbar {
+  width: 2px;
+  display: none;
+}
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+/* container */
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46.85rem;
+  background-color: #242531;
+}
+.main-container {
+  font-family: "Rubik", sans-serif;
+  width: 62.5rem;
+  height: 43.75rem;
+  background-color: #ffffff;
+}
+@media all and (max-width :768px ){
+  .main-container{
+    height: 100%;
+  }
+}
+
+/* Start Header */
+header {
+  font-size: 12px;
+}
+.header-img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+/*End Header */
+
+/* main start */
+
+main {
+  height: 90%;
+}
+
+/* main end*/
+
+/* starti Side bar */
+
+.Side-bar {
+  background-color: #242531;
+}
+
+.team-container {
+  background-color: #3a3c53;
+}
+
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1{
+  background-color: #58AEFF;
+  box-shadow: 0 5px 15px #58AEFF;
+}
+.project2{
+  background-color: #FF8158;
+  box-shadow: 0 5px 15px #FF8158;
+}
+.project3{
+  background-color: #FFB658 ;
+  box-shadow: 0 5px 15px  #FFB658;
+}
+.project4{
+  background-color: #B058FF;
+  box-shadow: 0 5px 15px #B058FF;
+}
+/* end Side bar */
+
+/* Dynamic Style */
+.active {
+  font-weight: 500;
+  font-style: Medium;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+
+<div class="p-12 main-container bg-white mx-auto shadow-2xl mt-20 rounded-xl flex flex-col items-center">
+  <h1 class="font-semibold uppercase text-2xl ">Iran States</h1>
+  <div class="relative mt-10">
+    <input type="text" onkeyup="searchFunc()" placeholder="Search" class=" font-semibold border-2 shadow border-gray-300  md:w-96 h-12 w-64 rounded-full px-10 outline-none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="search-Icon h-5 w-5 absolute top-4 left-3" fill="none" viewBox="0 0 24 24" stroke="#A2A3AF">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+  </div>
+  <div class="hidden false-search">
+    <svg xmlns="http://www.w3.org/2000/svg" class="sm:h-64 sm:w-64 w-48 mt-5" viewBox="0 0 20 20" fill="#A2A3AF">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-7.536 5.879a1 1 0 001.415 0 3 3 0 014.242 0 1 1 0 001.415-1.415 5 5 0 00-7.072 0 1 1 0 000 1.415z" clip-rule="evenodd" />
+    </svg>
+  </div>
+  <p class="hidden false-search font-semibold text-gray-500 text-center mt-4">Sorry ! <br> there aren't any matches for your search</p>
+  <div class="h-full w-full mt-12 scroll flex flex-wrap">
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

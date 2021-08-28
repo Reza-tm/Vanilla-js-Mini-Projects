@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8d41c8ec-15fb-4503-85de-7b5abc8ddb36" name="reza-online" url="http://127.0.0.1:5500">
+        <fileTransfer mountedRoot="Z:\wtf\My-projects\Project\Shop-project" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

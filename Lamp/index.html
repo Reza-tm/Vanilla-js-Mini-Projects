@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="bg-gray-600">
+
+<div class="flex justify-evenly h-screen items-center flex-wrap flex-col md:flex-row">
+      <button onclick="changeColor()" id="Btn" class="md:order-1 overflow-hidden py-6 px-8 font-semibold bg-green-400  rounded-2xl text-4xl "
+      >Change <span id="color" class="text-white block mt-5">Color</span> </button>
+      <button onclick="reseter()" id="reset" class="overflow-hidden order-3 md:order-2 overflow-hidden py-6 px-8 font-semibold bg-gray-900 text-white  rounded-2xl text-4xl uppercase"><span id="resetItem" > reset </span> </button>
+      <button onclick="changeColor2()" id="Btn2" class="md:order-3 overflow-hidden py-6 px-8 font-semibold bg-pink-400  rounded-2xl text-4xl "
+      >Change <span id="color2" class="text-white block mt-5">Color</span> </button>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

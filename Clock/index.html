@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project three</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="csshake.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="flex justify-center pt-20">
+
+    <div class="mobile bg-red-200 rounded-2xl flex overflow-hidden">
+
+        <div class="sideBar border-r-2 flex flex-col justify-between items-center py-4 spfont">
+            <div class="top-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                  </svg>
+            </div>
+
+            <div class="w-full">
+                <div onclick="clockFunc()" class="active clock flex flex-col justify-center items-center cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    <p class="text-xs text-white  mt-1">Clock</p>
+                </div>
+                <div onclick="birthFunc()" class="actived birth flex flex-col justify-center items-center cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                      </svg>
+                    <p class="text-xs text-white mt-1">Birthday</p>
+                </div>
+            </div>
+
+
+            <div class="text-xs text-white  mt-1 text-center flex flex-col justify-center items-center">
+                Reza <br> Tm
+            </div>
+        </div>
+
+        <div id="clock" class="hidden main w-9/12 p-5 flex flex-col">
+            <p class="tracking-wider sectionName font-semibold text-gray-50 spfont">Clock</p>
+
+            <div class="classic-timer mt-12 mb-3">
+                <p class="tracking-wide numfont text-white font-normal text-4xl">
+                    <span id="classicHour"></span> :
+                    <span id="classicMinute"></span>
+                </p>
+                <p class="spfont text-white  text-xs mt-2">
+                    <span id="classicWeek"></span>,
+                    <span id="classicDay"></span>
+                    <span id="classicMonth"></span>
+                </p>
+            </div>
+
+                <div class="clock-container flex justify-center mx-auto items-center">
+                    <div class="cl1 cl"></div>
+                    <div class="cl2 cl"></div>
+                    <div class="cl3 cl"></div>
+                    <div class="cl4 cl"></div>
+                    <div class="cl5 cl"></div>
+                    <div class="cl6 cl"></div>
+                    <div class="cl7 cl"></div>
+                    <div class="cl8 cl"></div>
+                    
+                    <div class="main-clock shadow-xl mx-auto">
+                        <div class="hour">
+                            <div class="hr"></div>
+                        </div>
+                        <div class="min">
+                            <div class="mn"></div>
+                        </div>
+                        <div class="sec">
+                            <div class="sc"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </div>
+
+        <div id="birth" class="main w-full p-5 flex flex-col text-white items-center justify-center space-y-10">
+           <div class="modal transition w-40 h-52 bg-red-100 rounded-2xl flex flex-col justify-between p-5">
+               <div class="overflow-hidden months grid grid-cols-3 gap-2 ">
+                   <div draggable="true" id="jan" class="monthPack ">
+                       <p class="text-xs mid">Jan</p>
+                   </div>
+
+                   <div draggable="true" id="feb" class="monthPack">
+                    <p class="text-xs mid">Feb</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Mar</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Apr</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">May</p>
+                </div>
+
+                <div draggable="true" class=" monthPack">
+                    <p class="text-xs mid ">Jun</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Jul</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Aug</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Sep</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Oct</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Nov</p>
+                </div>
+
+                <div draggable="true" class="monthPack">
+                    <p class="text-xs mid">Dec</p>
+                </div>
+
+               </div>
+               <div class="transition flex empy mx-auto relative bg-white w-8 h-6 rounded">
+                </div>
+
+                <div class="w-full hh hidden opacity-0  flex justify-center items-center ">
+                    <label for="">
+                        <p class="text-sm text-center font-semibold">Your birth Day</p>
+                        <input id='dayinput' placeholder="1-31" max="31" min="1" class="px-2 mt-3 mx-auto outline-none w-full h-6 rounded appearance-none text-black" type="number" name="" id="">
+                        <button  onclick="setDay()" class="text-sm dayfinishBtn mx-auto w-full h-6 px-2 rounded bg-white mt-3">Finish</button>
+                    </label>
+                </div>
+                
+                <div class="hidden birthTimer text-center space-y-6">
+                    <p class="font-semibold">Until birthDay</p>
+                    <div class="font-semibold text-xs"><p>Days <span class="Days text-sm">10</span></p></div>
+                    <div class="font-semibold text-xs"><p>Hours <span class="Hours text-sm">10</span></p></div>
+                    <div class="font-semibold text-xs"><p>Minutes <span class="Minutes text-sm">10</span></p></div>
+                    <div class="font-semibold text-xs"><p>Seconds <span class="Seconds text-sm">10</span></p></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

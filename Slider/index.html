@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    
+    <div class="main-container mx-auto mt-16 select-none rounded flex flex-col items-center">
+      <div class="px-5 pt-8 flex justify-between items-center w-full h-full space-x-5 ">
+        <div>
+          <svg onclick="pict((currIndex - 1))"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="#E84172">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7" />
+          </svg>
+        </div>
+        <div class="picutre"><img src="IMG/1.jpg"  class="border-4 border-red-200 rounded w-full h-full object-cover" alt=""></div>
+        <div class="picutre"><img src="IMG/2.jpg"  class="border-4 border-red-200 rounded w-full h-full object-cover" alt=""></div>
+        <div class="picutre"><img src="IMG/3.jpg"  class="border-4 border-red-200 rounded w-full h-full object-cover" alt=""></div>
+        <div class="picutre"><img src="IMG/4.jpg"  class="border-4 border-red-200 rounded w-full h-full object-cover" alt=""></div>
+        <div class="picutre"><img src="IMG/5.jpg"  class="border-4 border-red-200 rounded w-full h-full object-cover" alt=""></div>
+        <div>
+          <svg onclick="pict((currIndex + 1))" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="#E84172">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="dot-container flex items-center space-x-6 p-6">
+        <i class="dot fas fa-circle-notch text-red-100"></i>
+        <i class="dot fas fa-circle-notch text-red-100"></i>
+        <i class="dot fas fa-circle-notch text-red-100"></i>
+        <i class="dot fas fa-circle-notch text-red-100"></i>
+        <i class="dot fas fa-circle-notch text-red-100"></i>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="flex justify-center mx-auto flex-col items-center">
+    <p class="bgc h-8 px-10 py-3 text-white font-semibold rounded-t-xl mt-12 bg-gray-700 mx-auto">I love</p>
+    <div id="city" class="mx-auto  rounded-xl mt-0 md:p-12 p-8 shadow-2xl bg-gray-700 flex md:flex-row flex-col md:items-start justify-center md:space-x-11 md:space-y-0 space-y-11 mx-auto">
+      <div class="relative">
+        <select name="" onclick="activeBoolian()" onchange="selectFunc()" class="section outline-none text-sm h-8 px-3 font-semibold appearance-none rounded w-52" id="">
+          <option value="select" class="font-semibold">Select Your section</option>
+          <option value="Tehran" class="font-semibold">Tehran</option>
+          <option value="Ghom" class="font-semibold">Ghom</option>
+          <option value="Rasht" class="font-semibold">Rasht</option>
+        </select>
+          <svg xmlns="http://www.w3.org/2000/svg" class="ymid right-2 absolute h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+      </div>
+
+      <div class="justify-center relative bg-gray-50 h-8 flex items-center px-3 rounded">
+        Beacues
+      </div>
+
+      <div class="relative">
+        <select disabled  class="part outline-none text-sm h-8 px-3 font-semibold appearance-none rounded w-52" name="" id="">
+
+          </select>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ymid right-2 absolute h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

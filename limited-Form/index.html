@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="bg-indigo-100">
+
+    <div class="back-container rounded-xl mx-auto mt-24 relative ">
+      <div class="main-container rounded-xl bg-white absolute px-10 py-8">
+
+        <h2 class="font-semibold text-3xl">Sign in</h2>
+
+        <label for="" class="relative block w-full mt-12">
+          <input type="text" id="userInput" onkeyup="userName()" class="border-2 border-indigo-300 rounded  h-12 w-full outline-none px-2"><p class="absolute left-0 -top-5 inText font-bold">Username or Email</p>
+          <p id="userError" class="hidden absolute left-0 -bottom-5 inText font-bold text-red-500">Your Username should be more than 6 character</p>
+        </label>
+
+        <label for="" class="relative mt-14 block">
+          <input disabled type="text" id="passInput" onkeyup="pass()" class="border-2 border-indigo-300 rounded h-12 w-full outline-none px-2"><p class="absolute left-0 -top-5 inText font-bold">Password</p>
+          <p id="passError" class="hidden absolute left-0 -bottom-5 inText font-bold text-red-500">Your password should be more than 4 character</p>
+        </label>
+
+        <button  class="cursor-not-allowed w-full py-3 bg-red-500 rounded mt-10 text-white font-semibold">Sign in</button>
+
+        <h1 class="text-center mt-5">Designed by <a href="https://github.com/Reza-tm" class="font-semibold underline">Reza tm</a></h1>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

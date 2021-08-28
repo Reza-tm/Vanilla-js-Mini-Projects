@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+	background-color: #4ae2ff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23b0b2f4' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%233a73fb' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%234e588f' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23316ae5' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%236b88d6' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23245eca' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%236486bb' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23235bb5' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23508ed0' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2313478d' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%234886b3' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23134b8b' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.mid {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.spfont {
+	font-family: "Raleway", sans-serif;
+}
+.numfont {
+	font-family: "Lato", sans-serif;
+}
+.mobile {
+	height: 500px;
+	width: 250px;
+	background-color: #2e2f41f3;
+}
+
+.text-xs {
+	font-size: 10px;
+}
+
+.sideBar {
+	width: 60px;
+	border-color: #3c3d52;
+}
+
+.birth,
+.clock {
+	width: 100%;
+	height: 60px;
+	transform: translate(-50%, -50%);
+}
+.active {
+	transition: 0.3s;
+	background-color: #242734;
+	border-top-right-radius: 15px;
+}
+.actived {
+	transition: 0.3s;
+	background-color: #242734;
+	border-bottom-right-radius: 15px;
+}
+
+.clockIcon {
+	width: 20px;
+}
+
+.clock-container {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: #eaecff;
+	margin-top: 40px;
+	position: relative;
+	box-shadow: 0 0 10px 2px #454975;
+}
+
+.cl {
+	opacity: 0.2;
+	position: absolute;
+	background-color: #eaecff;
+	box-shadow: 0 0 10px 2px #454975;
+}
+
+.cl1 {
+	width: 1px;
+	height: 8px;
+	top: -16px;
+}
+
+.cl2 {
+	width: 8px;
+	height: 1px;
+	left: -16px;
+}
+
+.cl3 {
+	width: 8px;
+	height: 1px;
+	right: -16px;
+}
+
+.cl4 {
+	width: 1px;
+	height: 8px;
+	bottom: -16px;
+}
+
+.cl5 {
+	width: 1px;
+	height: 8px;
+	bottom: 2px;
+	right: 2px;
+	transform: rotate(-45deg);
+}
+
+.cl6 {
+	width: 1px;
+	height: 8px;
+	bottom: 2px;
+	left: 2px;
+	transform: rotate(45deg);
+}
+
+.cl7 {
+	width: 1px;
+	height: 8px;
+	top: 2px;
+	left: 2px;
+	transform: rotate(-45deg);
+}
+
+.cl8 {
+	width: 1px;
+	height: 8px;
+	top: 2px;
+	right: 2px;
+	transform: rotate(45deg);
+}
+
+.main-clock {
+	width: 83px;
+	height: 83px;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 2px #3a3a3a56;
+	background-color: #454975;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-clock::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #eaecff;
+}
+
+.main-clock .min,
+.main-clock .sec,
+.main-clock .hour {
+	position: absolute;
+}
+
+.main-clock .hour,
+.hr {
+	width: 40px;
+	height: 35px;
+}
+
+.main-clock .min,
+.mn {
+	width: 60px;
+	height: 60px;
+}
+
+.main-clock .sec,
+.sc {
+	width: 60px;
+	height: 70px;
+}
+
+.hr,
+.mn,
+.sc {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.hr::before {
+	content: "";
+	width: 4px;
+	height: 20px;
+	background: rgb(199, 120, 243);
+	background: linear-gradient(
+		1deg,
+		rgba(199, 120, 243, 1) 0%,
+		rgba(233, 121, 176, 1) 100%
+	);
+	position: absolute;
+	z-index: 1;
+	border-radius: 6px 6px 0 0;
+}
+.mn::before {
+	content: "";
+	width: 3px;
+	height: 26px;
+	background: rgb(95, 206, 255);
+	background: linear-gradient(
+		1deg,
+		rgba(95, 206, 255, 1) 0%,
+		rgba(100, 78, 255, 1) 100%
+	);
+	position: absolute;
+	border-radius: 6px 6px 0 0;
+}
+.sc::before {
+	content: "";
+	width: 2px;
+	height: 31px;
+	background: rgb(254, 179, 98);
+	background: linear-gradient(
+		1deg,
+		rgba(254, 179, 98, 1) 0%,
+		rgba(254, 95, 153, 1) 100%
+	);
+	position: absolute;
+	border-radius: 60px 60px 0 0;
+	z-index: 2;
+}
+
+.modal {
+	height: 13rem;
+	transition: 0.3s;
+	background-color: #454975;
+}
+
+.monthPack {
+	margin: 0 auto;
+	position: relative;
+	width: 2rem;
+	height: 1.5rem;
+	border-radius: 3px;
+	background-color: #2e2f41f3;
+	transition: 0.3s;
+}
+
+.months {
+	height: 120px;
+	transition: 0.3s;
+}
+
+.hold {
+	border: solid 2px red;
+}
+
+.invisible {
+	display: none;
+}
+
+.mamad {
+	background-color: #fff;
+	color: black;
+	font-weight: 600;
+}
+
+.hh {
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.dayfinishBtn {
+	background-color: #2e2f41f3;
+}
+
+.birthTimer {
+	margin-top: 30px;
+}
+.birthTimer > p {
+	margin-bottom: 40px;
+}
+.Days,
+.Hours,
+.Minutes,
+.Seconds {
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.Days {
+	color: rgb(199, 120, 243);
+}
+.Hours {
+	color: rgb(95, 206, 255);
+}
+
+.Minutes {
+	color: rgb(254, 179, 98);
+}
+
+.Seconds {
+	color: rgb(108, 91, 243);
+}
