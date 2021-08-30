@@ -1,0 +1,17 @@
+export let projects = [
+	{ name: "Vowels counter", address: "volwes/index.html" },
+	{ name: "word reverser", address: "Reverse-word/index.html" },
+	{ name: "Random Color", address: "RandomColor/index.html" },
+	{ name: "Shop Project", address: "Shop-project/index.html" },
+	{ name: "Mouse cursor", address: "Nice-mouse/index.html" },
+	{ name: "Address Selection", address: "adress-selection/index.html" },
+	{ name: "City search", address: "Search/index.html" },
+	{ name: "Random quete", address: "Random-quete/index.html" },
+	{ name: "Picture slider", address: "Slider/index.html" },
+	{ name: "Limited Form", address: "limited-Form/index.html" },
+	{ name: "To Do", address: "TO-Do/index.html" },
+	{ name: "Quiz App", address: "modul/index.html" },
+	{ name: "Lamp", address: "Lamp/index.html" },
+	{ name: "Hamburger Header", address: "Header-HtmlCss-dev/Home.html" },
+	{ name: "Clock", address: "Clock/index.html" },
+];
