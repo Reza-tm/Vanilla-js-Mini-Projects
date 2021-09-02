@@ -14,10 +14,10 @@
 				<!-- start header -->
 				<header class="flex items-center justify-between sm:p-0 p-4">
 					<ul class="headerMenu space-x-6 hidden sm:flex">
-						<li class="header-Menu-Item active">Projects</li>
-						<li class="header-Menu-Item">About Me</li>
-						<li class="header-Menu-Item">Contant mMe</li>
-						<li class="header-Menu-Item">License</li>
+						<li id="pj" onclick="headerClick(id)" class="headerItems cursor-pointer header-Menu-Item active">Projects</li>
+						<li id="about" onclick="headerClick(id)" class="headerItems cursor-pointer header-Menu-Item">About Me</li>
+						<li id="contact" onclick="headerClick(id)" class="headerItems cursor-pointer header-Menu-Item">Contant Me</li>
+						<li id="License" onclick="headerClick(id)" class="headerItems cursor-pointer header-Menu-Item">License</li>
 					</ul>
 					<div class="hamburgar">
 						<svg
@@ -47,7 +47,7 @@
 				<!-- end header -->
 
 				<!-- start main -->
-				<main class="grid lg:grid-cols-4 md:grid-cols-5 md:mt-5 mt-10">
+				<main id="pj" class="pages hidden grid lg:grid-cols-4 md:grid-cols-5 md:mt-5 mt-10">
 					<!-- start Side Bar -->
 					<section
 						class="
@@ -162,8 +162,40 @@
 					</section>
 				</main>
 				<!-- end main -->
+				<!-- start aboutMe -->
+				<main id="about" class=" pages">
+					<section class="w-full mt-5 rounded-lg h-full overflow-hidden flex">
+						<section class="about-container quetion w-4/12 h-full flex items-center flex-col">
+							<div class=" p-10 flex items-center flex-col">
+								<h2 class="text-white text-xl">About Me</h2>
+								<div class=" flex w-full mt-10 border-b-2 border-white border-opacity-10 pb-6">
+									<img class=" w-24 rounded-full border-4 " src="prof.jpg" alt="">
+									<div class="ml-5 text-white flex flex-col justify-around h-full">
+										<div>
+											<p>Reza Tm</p>
+											<p class="text-xs">(mehdi sobhgol)</p>
+										</div>
+										<div class="flex space-x-2">
+											<a href=""><img class="w-8" src="linkedin_social_icon.png" alt=""></a>
+											<a href=""><img class="w-8" src="google plus_social_icon.png" alt=""></a>
+											<a href=""><img class="w-8" src="instagram_photo_icon.png" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="h-full flex justify-end  w-full">
+								<div class="mamad flex flex-col relative w-48 h-full justify-evenly align-end">
+									<h3 class="rounded-l-2xl  active-title about-title ">PERSONAL DETAILS</h3>
+									<h3 class="rounded-l-2xl text-white  about-title ">MY DEV WAY</h3>
+									<h3 class="rounded-l-2xl text-white  about-title ">WHY I LOVE JS</h3>
+								</div>
+							</div>
+						</section>
+						<section class="aboutDescribe w-8/12 h-full bg-gray-100"></section>
+					</section>
+				</main>
 			</section>
 		</section>
-		<script type="module" src="script.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>

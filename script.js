@@ -1,5 +1,21 @@
 //data
-import { projects } from "./data.js";
+let projects = [
+	{ name: "Vowels counter", address: "volwes/index.html" },
+	{ name: "word reverser", address: "Reverse-word/index.html" },
+	{ name: "Random Color", address: "RandomColor/index.html" },
+	{ name: "Shop Project", address: "Shop-project/index.html" },
+	{ name: "Mouse cursor", address: "Nice-mouse/index.html" },
+	{ name: "Address Selection", address: "adress-selection/index.html" },
+	{ name: "City search", address: "Search/index.html" },
+	{ name: "Random quete", address: "Random-quete/index.html" },
+	{ name: "Picture slider", address: "Slider/index.html" },
+	{ name: "Limited Form", address: "limited-Form/index.html" },
+	{ name: "To Do", address: "TO-Do/index.html" },
+	{ name: "Quiz App", address: "modul/index.html" },
+	{ name: "Lamp", address: "Lamp/index.html" },
+	{ name: "Hamburger Header", address: "Header-HtmlCss-dev/Home.html" },
+	{ name: "Clock", address: "Clock/index.html" },
+];
 //get Elements
 
 const sideBarProjectWrapper = document.getElementById("sideBarProjectWrapper");
@@ -69,7 +85,28 @@ function mainPageProject(data) {
 	});
 }
 
-let nameq = ["ahmad", "rezai"];
-let change = nameq.forEach((e) => {
-	e.substring(0, 1);
-});
+// select header
+let projectSection = document.getElementById("projectSection");
+let headerItemsHtml = document.getElementsByClassName("headerItems");
+let pagesHtml = document.getElementsByClassName("pages");
+function headerClick(id, pageId) {
+	// style on click
+	let headerItems = [...headerItemsHtml];
+	let filtered = headerItems.filter((e) => e.id !== id);
+	let selectedHeader = headerItems.find((e) => e.id == id);
+	selectedHeader.classList.add("active");
+	filtered.forEach((e) => {
+		e.classList.remove("active");
+	});
+
+	// change page on click
+	let pages = [...pagesHtml];
+	const selectedPage = pages.find((e) => e.id == id);
+	selectedPage.classList.remove("hidden");
+	const filterdPage = pages.filter((e) => e.id !== id);
+	filterdPage.forEach((e) => {
+		e.classList.add("hidden");
+	});
+}
+
+function pageHiddenOrVisible(id) {}
